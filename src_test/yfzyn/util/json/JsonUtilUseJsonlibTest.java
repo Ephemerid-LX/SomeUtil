@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by xiaoliu(yfzyn) on 12/1/2016.
+ * Created by xiaoliu (yfzyn) on 12/1/2016.
  */
 public class JsonUtilUseJsonlibTest {
 
@@ -75,5 +75,4 @@ public class JsonUtilUseJsonlibTest {
         Person person = (Person) JsonUtilUseJsonlib.jsonStr2JaveObject(JSON_STR_2_JAVA_OBJECT, Person.class, classMap);
         System.out.println(person);
     }
-
 }

@@ -23,7 +23,7 @@ public class JsonUtilUseJsonlib{
     }
 
     /**
-     * 将符合条件的json字符串转化为objec
+     * 将符合条件的json字符串转化为object
      * @param jsonStr json字符串
      * @param clazz 根类
      * @param classMap json与java object映射
