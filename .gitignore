@@ -2,4 +2,4 @@ bin/
 *.[oa]
 *~
 .git/
-.iml
+*.iml
