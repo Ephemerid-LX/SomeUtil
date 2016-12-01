@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/src_test"/>
+	</contentEntry>
+	<lib name="junit-4.12-decy" scope="TEST"/>
+	<levels>
+		<level name="junit-4.12-decy" value="project"/>
+		<level name="json-lib-2.4-and-decy" value="project"/>
+	</levels>
+</component>
