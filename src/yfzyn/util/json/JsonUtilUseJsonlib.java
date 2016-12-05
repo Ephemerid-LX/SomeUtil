@@ -37,4 +37,8 @@ public class JsonUtilUseJsonlib{
         return JSONObject.toBean(jsonObject, jsonConfig);
     }
 
+    public static String javaObject2JsonStr(Object obj){
+        return JSONObject.fromObject(obj).toString();
+    }
+
 }

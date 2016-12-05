@@ -5,7 +5,9 @@ import yfzyn.entity.json.Address;
 import yfzyn.entity.json.Person;
 import yfzyn.entity.json.Pet;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -74,5 +76,15 @@ public class JsonUtilUseJsonlibTest {
 
         Person person = (Person) JsonUtilUseJsonlib.jsonStr2JaveObject(JSON_STR_2_JAVA_OBJECT, Person.class, classMap);
         System.out.println(person);
+    }
+
+    @Test
+    public void testJavaObject2JsonStr(){
+        List<Pet> pets = new ArrayList<Pet>();
+        pets.add(new Pet("Living", 9));
+        pets.add(new Pet("Going", 3));
+        Person person = new Person("xiao", true, pets, null);
+        String jsonStr = JsonUtilUseJsonlib.javaObject2JsonStr(person);
+        System.out.println(jsonStr);
     }
 }

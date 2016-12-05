@@ -7,7 +7,20 @@ import yfzyn.entity.json.Address;
  * Created by xiaoliu(yfzyn) on 12/1/2016.
  */
 public class Person {
+
+    private String personName;
+    private Boolean personAlive;
+    private List<Pet> personsPets;
+    private Address personsAddress;
+
     public Person(){};
+    public Person(String personName, Boolean personAlive, List<Pet> personsPets, Address personsAddress) {
+        this.personName = personName;
+        this.personAlive = personAlive;
+        this.personsPets = personsPets;
+        this.personsAddress = personsAddress;
+    }
+
     public String getPersonName() {
         return personName;
     }
@@ -32,10 +45,6 @@ public class Person {
     public void setPersonsAddress(Address personsAddress) {
         this.personsAddress = personsAddress;
     }
-    private String personName;
-    private Boolean personAlive;
-    private List<Pet> personsPets;
-    private Address personsAddress;
 
     @Override
     public String toString() {

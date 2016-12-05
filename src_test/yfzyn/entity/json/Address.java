@@ -4,7 +4,16 @@ package yfzyn.entity.json;
  * Created by xiaoliu(yfzyn) on 12/1/2016.
  */
 public class Address {
+
+    private String addressIp;
+    private Long addressNumber;
+
     public Address(){};
+    public Address(String addressIp, Long addressNumber) {
+        this.addressIp = addressIp;
+        this.addressNumber = addressNumber;
+    }
+
     public String getAddressIp() {
         return addressIp;
     }
@@ -17,8 +26,6 @@ public class Address {
     public void setAddressNumber(Long addressNumber) {
         this.addressNumber = addressNumber;
     }
-    private String addressIp;
-    private Long addressNumber;
 
     @Override
     public String toString() {
