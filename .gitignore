@@ -1,7 +1,16 @@
-bin/
 *.[oa]
 *~
+
+# output
+bin/
+
 .git/
+
+# idea
 *.iml
 *.eml
 .idea/
+
+# eclipse
+.classpath
+.project
